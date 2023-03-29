@@ -1,0 +1,38 @@
+.error {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error__title {
+  font-size: 6rem;
+  color: white;
+  text-align: center;
+  word-spacing: 3px;
+}
+
+.error__back:link,
+.error__back:visited {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1000;
+  color: #555;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 100rem;
+  padding: 0 2rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 50px;
+  margin-top: 4rem;
+}
+
+.error__back:hover,
+.error__back:active {
+  background-color: #79e17b;
+}

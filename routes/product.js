@@ -14,9 +14,12 @@ router.get('/:id', (req, res) => {
   const { id } = req.params;
   const product = getProduct(id);
   if (product) {
-    res.render('product', { title: 'Product', product });
+    res.render('product', {
+      title: `${product.productName} ${product.image}`,
+      product,
+    });
   } else {
-    console.log('Not found');
+    res.render('error', { title: 'Not found' });
   }
 });
 

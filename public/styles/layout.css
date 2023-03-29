@@ -17,7 +17,8 @@ body {
 }
 
 .navbar,
-.home {
+.home,
+.error {
   max-width: 1100px;
   margin: 0 auto;
 }
