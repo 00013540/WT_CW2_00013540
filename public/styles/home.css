@@ -79,8 +79,10 @@
   font-size: 1.9rem;
 }
 
+.card__link,
 .card__link:link,
 .card__link:visited {
+  cursor: pointer;
   flex: 0 0 auto;
   background-color: #79e17b;
   color: white;
@@ -99,6 +101,10 @@
 .card__link:hover,
 .card__link:active {
   background-color: #9be15d;
+}
+
+.card__link.update {
+  background-color: white;
 }
 
 .card__link span {
@@ -122,4 +128,34 @@
 
 .not-organic {
   display: none;
+}
+
+.home__btn__block {
+  margin: 0 0 2rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home__btn__create:link,
+.home__btn__create:visited {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1000;
+  color: #555;
+  background-color: white;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+  border-radius: 100rem;
+  padding: 0 2rem;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 50px;
+}
+
+.home__btn__create:hover,
+.home__btn__create:active {
+  background-color: #79e17b;
 }

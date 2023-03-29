@@ -3,6 +3,9 @@ extends layout.pug
 block content 
     section.home
         h1.home__title This web application was created to fulfill Web Technology module's requirements and does not represent an actual company or service
+        div.home__btn__block
+            a(class='home__btn__create' href='/product/create')
+                span.emoji-left + Add
         each product in products
             figure.card 
                 div.card__emoji= product.image 
@@ -16,6 +19,9 @@ block content
                     div.card__detail-box
                         h6(class='card__detail card__detail--price')=`$${product.price}`
                 a(class='card__link' href=`/product/${product.id}`)
-                    span Detail 
-                        i.emoji-right 👉
+                    i.emoji-right 👉
+                a(class='card__link update' href=`/product/update/${product.id}`)
+                    i.emoji-right 🔨
+                span(class='card__link delete')
+                    i.emoji-right 🧨
         
