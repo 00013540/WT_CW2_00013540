@@ -1,0 +1,35 @@
+extends layout.pug 
+
+block content 
+    form.form#form(data-id= product ? product.id : '')
+        div.form__group
+            label(class='form__label' for='name') Product name 
+            input(class='form__input' id='name' value=product ? product.productName : '')
+            span.form__error#name-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='from') From
+            input(class='form__input' id='from' value=product ? product.from : '')
+            span.form__error#from-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='nutrients') Nutrients
+            input(class='form__input' id='nutrients' value=product ? product.nutrients : '')
+            span.form__error#nutrients-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='quantity') Quantity
+            input(class='form__input' id='quantity' value=product ? product.quantity : '')
+            span.form__error#quantity-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='price') Price
+            input(class='form__input' id='price' type='number' value=product ? product.price : '')
+            span.form__error#price-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='image') Emoji
+            input(class='form__input' id='image' value=product ? product.image : '')
+            span.form__error#image-error This field is required to fill
+        div.form__group
+            label(class='form__label' for='organic') Is organic?
+            input(class='form__input checkbox' id='organic' type='checkbox' checked=product ? product.organic : false)
+        div.form__group
+            textarea(class='form__input textarea' id='description' placeholder='Description' rows="10")= product ? product.description : ''
+            span.form__error#description-error This field is required to fill
+        button.form__btn= product ? 'Update' : 'Save' 
