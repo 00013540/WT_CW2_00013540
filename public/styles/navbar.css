@@ -1,0 +1,27 @@
+.navbar__link {
+  text-decoration: none;
+}
+
+.navbar__title {
+  font-family: 'Megrim', sans-serif;
+  font-size: 6rem;
+  color: white;
+  transform: skewY(-5deg);
+  text-align: center;
+  position: relative;
+  word-spacing: 3px;
+}
+
+.navbar__title::before {
+  content: '';
+  display: block;
+  height: 65%;
+  width: 49%;
+  position: absolute;
+  top: 105%;
+  left: 50%;
+  background: linear-gradient(to bottom, #9be15d, #00e3ae);
+  opacity: 0.8;
+  z-index: -1;
+  transform: skewY(370deg) translate(-50%, -50%);
+}

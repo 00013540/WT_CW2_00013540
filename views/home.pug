@@ -1,0 +1,21 @@
+extends layout.pug 
+
+block content 
+    section.home
+        h1.home__title This web application was created to fulfill Web Technology module's requirements and does not represent an actual company or service
+        each product in products
+            figure.card 
+                div.card__emoji= product.image 
+                div.card__title-box
+                    h2.card__title= product.productName
+                div.card__details
+                    div(class=!product.organic ? 'card__detail-box not-organic' : 'card__detail-box')
+                        h6(class='card__detail card__detail--organic') Organic!
+                    div.card__detail-box
+                        h6.card__detail=`${product.quantity} per 📦`
+                    div.card__detail-box
+                        h6(class='card__detail card__detail--price')=`$${product.price}`
+                a(class='card__link' href=`/product/${product.id}`)
+                    span Detail 
+                        i.emoji-right 👉
+        

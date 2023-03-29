@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  color: #555;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #9be15d, #00e3ae);
+  padding: 5rem 0 10rem;
+}
+
+.navbar,
+.home {
+  max-width: 1100px;
+  margin: 0 auto;
+}

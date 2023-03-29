@@ -1,0 +1,24 @@
+extends layout.pug 
+
+block content 
+    figure.product
+            div(class=!product.organic ? 'product__organic not-organic' : 'product__organic')
+                h5 Organic
+            a(class='product__back' href='/')
+                span.emoji-left 👈 Back
+            div.product__hero
+                each index in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                    span(class=`product__emoji product__emoji--${index}`)= product.image
+            h2.product__name= product.productName
+            div.product__details
+                p 
+                    span.emoji-left= `🌍 ${product.from}`
+                p 
+                    span.emoji-left= `❤️ ${product.nutrients}`
+                p 
+                    span.emoji-left= `📦 ${product.quantity}` 
+                p 
+                    span.emoji-left= `🏷 $${product.price}`   
+            p.product__description= product.description
+        
+                    
