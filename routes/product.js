@@ -19,7 +19,7 @@ function saveProduct(products) {
 
 router
   .route('/create')
-  .get((req, res) => {
+  .get((_, res) => {
     res.render('product-create-update', { title: 'Product create' });
   })
   .post((req, res) => {

@@ -8,7 +8,7 @@ function getProducts() {
   return JSON.parse(dataString);
 }
 
-router.get('/', (req, res) => {
+router.get('/', (_, res) => {
   res.render('home', { title: 'Home', products: getProducts() });
 });
 
