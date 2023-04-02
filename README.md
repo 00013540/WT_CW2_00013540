@@ -4,9 +4,22 @@
 
 ## Instructions:
 
-To begin with the project, it is necessary to install all of the dependencies. This can be achieved by running the command "npm install" in your terminal. Once the installation is complete, the project can be started by executing the command "npm start".
+1. Download the source code
+```bash
+git clone https://github.com/00013540/WT_CW2_00013540.git
+```
 
-On the home page of the application, you will find a comprehensive list of all available products. Each product can be viewed in detail by clicking on it, and users have the ability to update or delete the product's data. Additionally, from the home page, users can create a new product by clicking on the "+ Add" button.
+or just download the *.zip file
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Run the application
+```bash
+npm start
+```
 
 ## Dependencies list:
 
@@ -29,3 +42,7 @@ This project has two types of dependencies: "dependencies" and "dev-dependencies
 ## Link to the GitHub repository:
 
 https://github.com/00013540/WT_CW2_00013540
+
+## Link to application on Glitch
+
+https://plain-dull-chili.glitch.me
